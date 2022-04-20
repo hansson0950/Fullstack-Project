@@ -96,3 +96,17 @@ body {
         display: flex;
     }
 }
+
+.footer{
+    text-align: center;
+    background-color:lightblue;
+    font-size:17px;
+    color:#000000;
+    
+}
+
+.footerDiv {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
