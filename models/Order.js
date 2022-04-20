@@ -5,6 +5,18 @@ const orderSchema = new mongoose.Schema({
         type: Date,
         required: true,
         default: Date.now
+    },
+    user: {
+        type: String,
+        required: true
+    },
+    products: {
+        type: Array,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
     }
 });
 
