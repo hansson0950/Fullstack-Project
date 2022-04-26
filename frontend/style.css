@@ -190,3 +190,53 @@ input[type=text], select, textarea {
     background-color: wheat;
     padding: 50px;
   }
+
+  .contact-section{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 70px;
+    font-size: 18px;
+  }
+  
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+
+  /*css for alert messages*/
+
+.alert-success{
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD66E;
+    border-radius: 4px;
+  }
+  
+  .alert-error{
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #FFA502;
+    border-radius: 4px;
+  }
