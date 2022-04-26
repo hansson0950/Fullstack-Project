@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema({
-    date: {
-        type: Date,
-        required: true,
-        default: Date.now
-    },
     user: {
         type: String,
         required: true
@@ -17,6 +12,11 @@ const orderSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: true
+    },
+    date: {
+        type: Date,
+        required: true,
+        default: Date.now
     }
 });
 
