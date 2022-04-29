@@ -17,7 +17,19 @@ const loginValidation = data => {
     return schema.validate(data);
 };
 
+const contactFormValidation = data => {
+    const schema = Joi.object({
+        firstName: Joi.string().min(3).max(20).required(),
+        lastName: Joi.string().min(3).max(20).required(),
+        email: Joi.string().max(50).required().email(),
+        country: Joi.string().min(3).max(20).required(),
+        message: Joi.string().required()
+    });
+    return schema.validate(data);
+}
+
 module.exports = {
     registerValidation,
-    loginValidation
+    loginValidation,
+    contactFormValidation
 };

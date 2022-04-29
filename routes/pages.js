@@ -1,5 +1,7 @@
 const router = require("express").Router();
 const path = require("path");
+const { contactFormValidation } = require("../validation");
+const Message = require('../models/Message');
 
 router.get("/home", (req, res) => {
     res.sendFile(path.resolve("frontend/index.html"))
@@ -11,6 +13,26 @@ router.get("/about", (req, res) => {
 
 router.get("/contact", (req, res) => {
     res.sendFile(path.resolve("frontend/contact/index.html"))
+})
+
+router.post("/contact", (req, res) => {
+    
+    const { error } = contactFormValidation(req.body);
+    if (error) return res.status(400).json({ error: error.details[0].message });
+
+    const data = new Message({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        country: req.body.country,
+        message: req.body.message
+
+    })
+   
+    data.save();
+    res.redirect('/contact');
+   
+    
 })
 
 router.get("/login", (req, res) => {
