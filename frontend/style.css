@@ -117,22 +117,9 @@ body {
         border-radius: 30px;
     }
 
-/* Main header and text */
-.mainHeader {
-    font-size: 75px;
-    color: white;
-    text-align: center;
-}
-
-#mainText {
-    font-size: 25px;
-    color: white;
-    text-align: center;
-}
-/* Main header and text end */
 
 /* three div text and header */
-.LRC-text {
+.paragraph {
     font-size: 18px;
     color: white;
 }
@@ -154,13 +141,50 @@ body {
 /* image end */
 
 
+
+/* Main header/text and IMAGE */
+
+#mainImage {
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.mainHeader {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainText {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Main header/text and IMAGE end */
+
+
 /* three div  */
 .container .box { 
-    width:540px; 
+    width:100%; 
     margin:50px; 
     display:table;
     margin: auto;
-    border-spacing: 5em .5em ;
+    border-spacing: 5em .5em;
 } 
 .container .box .box-row { 
     display:table-row;
@@ -168,16 +192,18 @@ body {
 .container .box .box-cell { 
     display:table-cell; 
     width:33%; 
-    padding:10px; 
+    padding:100px; 
 } 
 .container .box .box-cell.box1 { 
     color:white; 
     text-align:justify;
 } 
-.container .box .box-cell.box2 { 
+.container .box .box-cell.box2 {
+    color:white; 
     text-align:justify 
 } 
-.container .box .box-cell.box3 { 
+.container .box .box-cell.box3 {
+    color:white;  
     text-align:justify; 
 }
 /* three div end */
