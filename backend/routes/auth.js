@@ -7,8 +7,6 @@ const signale = require("signale");
 require("dotenv").config();
 
 router.post("/register", async (req, res) => {
-    signale.debug("Registering...");
-    
     const { error } = registerValidation(req.body);
     if (error) return res.status(400).json({ error: error.details[0].message });
 
@@ -34,8 +32,6 @@ router.post("/register", async (req, res) => {
 });
 
 router.post("/login", async (req, res) => {
-    signale.debug("Logging In...");
-
     const { error } = loginValidation(req.body);
     if (error) return res.status(400).json({ error: error.details[0].message });
 

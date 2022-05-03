@@ -15,7 +15,7 @@ router.get("/contact", (req, res) => {
 })
 
 router.post("/contact", (req, res) => {
-    
+
     const data = new Message({
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -24,11 +24,8 @@ router.post("/contact", (req, res) => {
         message: req.body.message
 
     })
-   
     data.save();
     res.redirect('/contact');
-   
-    
 })
 
 router.get("/login", (req, res) => {

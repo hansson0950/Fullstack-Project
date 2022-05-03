@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
 
 const messageSchema = new mongoose.Schema({
-    date: {
-        type: Date,
-        required: true,
-        default: Date.now
-    },
     firstName: {
         type: String,
         required: true,
@@ -25,11 +20,17 @@ const messageSchema = new mongoose.Schema({
     },
     country: {
         type: String,
-        required: true
+        required: true,
+        min: 4
     },
     message: {
         type: String,
         required: true
+    },
+    date: {
+        type: Date,
+        required: true,
+        default: Date.now
     }
 });
 
