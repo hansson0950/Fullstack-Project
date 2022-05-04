@@ -7,8 +7,9 @@ module.exports = router;
 router.post("/", async (req, res) => {
     const product = new Product({
         name: req.body.name,
-        price: req.body.price
-    })
+        price: req.body.price,
+        imageLink: req.body.imgLink
+    });
     try {
         const newProduct = await product.save()
         res.status(201).json(newProduct)

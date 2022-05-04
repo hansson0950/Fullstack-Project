@@ -8,6 +8,10 @@ const productSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: true
+    },
+    imgLink: {
+        type: String,
+        required: true
     }
 });
 

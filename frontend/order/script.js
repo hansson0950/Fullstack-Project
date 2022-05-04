@@ -21,6 +21,12 @@ window.onload = function initialize() {
                 cell.innerHTML = response[i].name;
                 cell.appendChild(document.createElement("br"));
 
+                var img = document.createElement("img");
+                img.className = img;
+                img.src = response[i].imageLink;
+                cell.appendChild(img);
+                cell.appendChild(document.createElement("br"));
+
                 var minBtn = document.createElement("input");
                 minBtn.value = "-";
                 minBtn.className = "submit";
