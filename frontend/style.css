@@ -192,7 +192,6 @@ body {
 .container .box .box-cell { 
     display:table-cell; 
     width:33%; 
-    padding:100px; 
 } 
 .container .box .box-cell.box1 { 
     color:white; 

@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const secureRoute = require("./routes/secure");
 const pages = require("./routes/pages");
+const products = require("./routes/products");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.static("frontend"));
 app.use("/login/api/user", authRoute);
 app.use("/login/api/secure", secureRoute);
 app.use("/", pages);
+app.use("/api/products", products)
 
 app.listen(PORT, () => {
     signale.info("Listening on port", PORT);
