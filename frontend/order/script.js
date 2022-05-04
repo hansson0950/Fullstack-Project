@@ -18,14 +18,20 @@ window.onload = function initialize() {
                 if (i % 3 == 0) var row = table.insertRow(-1);
 
                 var cell = row.insertCell(0);
-                cell.innerHTML = response[i].name;
-                cell.appendChild(document.createElement("br"));
+
+                var name = document.createElement("p");
+                name.className = "prodName";
+                name.innerHTML = response[i].name;
+                cell.appendChild(name);
 
                 var img = document.createElement("img");
-                img.className = img;
+                img.className = "img";
                 img.src = response[i].imgLink;
                 cell.appendChild(img);
-                cell.appendChild(document.createElement("br"));
+
+                var price = document.createElement("p");
+                price.innerHTML = response[i].price;
+                cell.appendChild(price);
 
                 var minBtn = document.createElement("input");
                 minBtn.value = "-";
@@ -70,9 +76,9 @@ table.addEventListener("click", e => {
 
 table.addEventListener("change", e => {
     var element = e.target;
-    if (element.type != "text") return
+    if (element.type != "text") return;
 
     var productNr = element.id.charAt(7);
     var counter = document.getElementById("counter" + productNr);
-    counter.value = parseInt(counter.value) || 0
-})
+    counter.value = parseInt(counter.value) || 0;
+});
