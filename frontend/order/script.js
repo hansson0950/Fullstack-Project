@@ -58,8 +58,8 @@ table.addEventListener("click", e => {
     if (element.id.substring(0, 7) == "plusBtn") {
         var productNr = element.id.charAt(7);
         var counter = document.getElementById("counter" + productNr);
-        var amount = counter.value;
-        counter.value = parseInt(amount) + 1;
+        var amount = parseInt(counter.value);
+        counter.value = amount + 1;
     } else if (element.id.substring(0, 6) == "minBtn") {
         var productNr = element.id.charAt(6);
         var counter = document.getElementById("counter" + productNr);
@@ -67,3 +67,12 @@ table.addEventListener("click", e => {
         if (amount > 0) counter.value = amount - 1;
     }
 });
+
+table.addEventListener("change", e => {
+    var element = e.target;
+    if (element.type != "text") return
+
+    var productNr = element.id.charAt(7);
+    var counter = document.getElementById("counter" + productNr);
+    counter.value = parseInt(counter.value) || 0
+})
