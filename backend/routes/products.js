@@ -23,7 +23,7 @@ router.get("/", async (req, res) => {
         const products = await Product.find();
         res.json(products);
     } catch (error) {
-        res.status(500).json({ message: error.message });    
+        res.status(500).json({ message: error.message });
     }
 });
 
@@ -33,7 +33,7 @@ router.get("/:id", getProducts, (req, res) => {
 });
 
 // Middleware
-async function getProducts (req, res, next) {
+async function getProducts(req, res, next) {
     let product;
     try {
         product = await Product.findById(req.params.id);
