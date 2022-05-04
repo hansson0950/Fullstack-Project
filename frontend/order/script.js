@@ -1,10 +1,10 @@
 // Script to make the menu come down and up (hamburger)
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
 toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
+    navbarLinks.classList.toggle('active');
 });
 
 const table = document.getElementById("table");
@@ -32,7 +32,7 @@ window.onload = function initialize() {
             counter.value = "0"
             counter.className = "counter";
             counter.id = "counter" + i;
-            counter.type = "text"
+            counter.type = "text";
             cell.appendChild(counter);
 
             var plusBtn = document.createElement("input");
@@ -47,18 +47,17 @@ window.onload = function initialize() {
 
 table.addEventListener("click", e => {
     var element = e.target;
-    if (element.type == "button") {
-        if (element.id.substring(0, 7) == "plusBtn") {
-            var productNr = element.id.charAt(7);
-            var counter = document.getElementById("counter" + productNr);
-            var amount = counter.value;
-            counter.value = parseInt(amount) + 1 ;
-        } else if (element.id.substring(0, 6) == "minBtn") {
-            var productNr = element.id.charAt(6);
-            var counter = document.getElementById("counter" + productNr);
-            var amount = parseInt(counter.value);
-            if (amount > 0)
-            counter.value = amount - 1;
-        }
+    if (element.type != "button") return
+
+    if (element.id.substring(0, 7) == "plusBtn") {
+        var productNr = element.id.charAt(7);
+        var counter = document.getElementById("counter" + productNr);
+        var amount = counter.value;
+        counter.value = parseInt(amount) + 1 ;
+    } else if (element.id.substring(0, 6) == "minBtn") {
+        var productNr = element.id.charAt(6);
+        var counter = document.getElementById("counter" + productNr);
+        var amount = parseInt(counter.value);
+        if (amount > 0) counter.value = amount - 1;
     }
 })
