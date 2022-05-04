@@ -17,29 +17,48 @@ window.onload = function initialize() {
         for (let i = 0; i < response.length; i++) {
             if (i % 3 == 0) var row = table.insertRow(-1);
             
-            var cell1 = row.insertCell(0);
-            cell1.innerHTML = response[i].name;
+            var cell = row.insertCell(0);
+            cell.innerHTML = response[i].name;
+            cell.appendChild(document.createElement("br"));
 
             var minBtn = document.createElement("input");
             minBtn.value = "-";
             minBtn.className = "submit";
             minBtn.id = "minBtn" + i;
             minBtn.type = "button";
-            cell1.appendChild(minBtn)
+            cell.appendChild(minBtn);
 
             var counter = document.createElement("input");
             counter.value = "0"
             counter.className = "counter";
             counter.id = "counter" + i;
             counter.type = "text"
-            cell1.appendChild(counter)
+            cell.appendChild(counter);
 
             var plusBtn = document.createElement("input");
             plusBtn.value = "+";
             plusBtn.className = "submit";
             plusBtn.id = "plusBtn" + i;
             plusBtn.type = "button";
-            cell1.appendChild(plusBtn)
+            cell.appendChild(plusBtn);
         }
     });
 }
+
+table.addEventListener("click", e => {
+    var element = e.target;
+    if (element.type == "button") {
+        if (element.id.substring(0, 7) == "plusBtn") {
+            var productNr = element.id.charAt(7);
+            var counter = document.getElementById("counter" + productNr);
+            var amount = counter.value;
+            counter.value = parseInt(amount) + 1 ;
+        } else if (element.id.substring(0, 6) == "minBtn") {
+            var productNr = element.id.charAt(6);
+            var counter = document.getElementById("counter" + productNr);
+            var amount = parseInt(counter.value);
+            if (amount > 0)
+            counter.value = amount - 1;
+        }
+    }
+})
