@@ -23,7 +23,7 @@ window.onload = function initialize() {
 
                 var img = document.createElement("img");
                 img.className = img;
-                img.src = response[i].imageLink;
+                img.src = response[i].imgLink;
                 cell.appendChild(img);
                 cell.appendChild(document.createElement("br"));
 
