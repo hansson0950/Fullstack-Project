@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
     const product = new Product({
         name: req.body.name,
         price: req.body.price,
-        imageLink: req.body.imgLink
+        imgLink: req.body.imgLink
     });
     try {
         const newProduct = await product.save()
