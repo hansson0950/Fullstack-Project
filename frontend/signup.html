@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <title>Food Store | Login</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-title">Brand Name</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    
+   <div class="form1">
+        <div class="title">Sign Up</div>
+        <div class="subtitle">Create your account</div>
+        <form id="signUpForm">
+            <div class="inputContainer">
+                <input type="text" id="name" class="input" placeholder="">
+                <div class="cut cutShort"></div>
+                <label for="name" class="placeholder">Name</label>
+            </div>
+            <div class="inputContainer">
+                <input type="email" id="signUpEmail" class="input" placeholder="">
+                <div class="cut cutShort"></div>
+                <label for="signUpEmail" class="placeholder">Email</label>
+            </div>
+            <div class="inputContainer">
+                <input type="password" id="signUpPassword" class="input" placeholder="">
+                <div class="cut"></div>
+                <label for="signUpPassword" class="placeholder">Password</label>
+            </div>
+            <button type="text" class="submit">Submit</button>
+            <p class="error" id="signUpError"></p>
+        </form>
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
