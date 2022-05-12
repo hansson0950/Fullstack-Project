@@ -1,0 +1,29 @@
+.products {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#bread {
+  font-size: 20px;
+  color: white;
+}
+
+.submit {
+  font-size: 50px;
+  background: linear-gradient(90deg,#2BEEFF, #92F6FF);
+  box-shadow: 0 0 25px ;
+  color: #fff;
+  border: none;
+  margin: 20px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.button-placement {
+  text-align: center;
+}

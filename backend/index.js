@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 
 const authRoute = require("./routes/auth");
 const secureRoute = require("./routes/secure");
+const pages = require("./routes/pages");
+const products = require("./routes/products");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -17,8 +19,10 @@ mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrl
 app.use(express.json());
 app.use(express.static("frontend"));
 
-app.use("/api/user", authRoute);
-app.use("/api/secure", secureRoute);
+app.use("/login/api/user", authRoute);
+app.use("/login/api/secure", secureRoute);
+app.use("/", pages);
+app.use("/api/products", products)
 
 app.listen(PORT, () => {
     signale.info("Listening on port", PORT);
