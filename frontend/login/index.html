@@ -2,43 +2,44 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/ztW30cZ.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <title>Food Store | Login</title>
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="brand-title">Brand Name</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="form">
-        <div class="title">Sign Up</div>
-        <div class="subtitle">Create your account</div>
-        <form id="signUpForm">
-            <div class="inputContainer">
-                <input type="text" id="name" class="input" placeholder="">
-                <div class="cut cutShort"></div>
-                <label for="name" class="placeholder">Name</label>
-            </div>
-            <div class="inputContainer">
-                <input type="email" id="signUpEmail" class="input" placeholder="">
-                <div class="cut cutShort"></div>
-                <label for="signUpEmail" class="placeholder">Email</label>
-            </div>
-            <div class="inputContainer">
-                <input type="password" id="signUpPassword" class="input" placeholder="">
-                <div class="cut"></div>
-                <label for="signUpPassword" class="placeholder">Password</label>
-            </div>
-            <button type="text" class="submit">Submit</button>
-            <p class="error" id="signUpError"></p>
-        </form>
+<div class="imgcon">
+    <div class="bild1">
+        <img src="C:\Users\Hugo Pettersson\Desktop\food.png">
     </div>
 
-    <div id="hidden" class="form"></div>
 
-    <div class="form">
+    <div class="bild2">
+        <img src="C:\Users\Hugo Pettersson\Desktop\pizza.png">
+    </div>
+
+    <div class="form2">
         <div class="title">Login</div>
         <div class="subtitle">Log in to your account</div>
         <form id="loginForm">
@@ -55,8 +56,15 @@
             <div class="inputContainer"></div>
             <button type="text" class="submit">Submit</button>
             <p class="error" id="loginError"></p>
+
+            <div class="createAccount">
+            <a href="signup.html"><p>Not a member? Create an account here!</p></a>
+        </div>
         </form>
     </div>
-    <script src="script.js"></script>
+
+</div>
+<script src="app.js"></script>
 </body>
+
 </html>
