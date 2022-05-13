@@ -201,3 +201,22 @@ body {
 .error {
     color: #dc2f55;
 }
+
+/* Footer start */
+.footer{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(255, 121, 121);
+    font-size:17px;
+    color:whitesmoke;
+    text-shadow: 1px 1px 3px #1b3138;
+    
+}
+
+.footerDiv {
+    padding-top: 20px;
+    position:fixed;
+    bottom: 10px;
+    width: 100%;
+}
+/* Footer end */
