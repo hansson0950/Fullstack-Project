@@ -32,4 +32,8 @@ router.get("/login", (req, res) => {
     res.sendFile(path.resolve("frontend/login/index.html"))
 })
 
+router.get("/register", (req, res) => {
+    res.sendFile(path.resolve("frontend/register/index.html"))
+})
+
 module.exports = router;
