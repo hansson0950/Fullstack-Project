@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color: #FFA630;
+    background-color: rgb(255, 121, 121);
 }
 
 .form1 {
