@@ -1,8 +1,15 @@
+/* 
+
+font-family: 'Carter One', cursive;
+font-family: 'Luckiest Guy', cursive;
+
+*/
 
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #104961, #1b3138, #104961);
+    font-family: 'Carter One', cursive;
 }
 
 .navbar {
