@@ -7,6 +7,7 @@ const register = require("./routes/registerAuth");
 const secureRoute = require("./routes/secure");
 const pages = require("./routes/pages");
 const products = require("./routes/products");
+const users = require("./routes/users");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -24,7 +25,8 @@ app.use("/login/api/user", login);
 app.use("/register/api/user", register);
 app.use("/login/api/secure", secureRoute);
 app.use("/", pages);
-app.use("/api/products", products)
+app.use("/api/products", products);
+app.use("/api/users", users);
 
 app.listen(PORT, () => {
     signale.info("Listening on port", PORT);
