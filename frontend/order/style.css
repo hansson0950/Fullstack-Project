@@ -24,6 +24,37 @@
   border-radius: 30px;
 }
 
-.button-placement {
+#header {
+  font-size: 35px;
+  color: rgb(255, 121, 121);
   text-align: center;
+  padding-top: 25px;
 }
+
+/* Button Checkout START*/ 
+.button-placementCheckOut {
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  position: sticky; /* position sticky or fixed */
+}
+
+.btn-checkOut {
+  background: linear-gradient(90deg, rgb(255, 73, 210), rgb(255, 121, 121) );
+  box-shadow: 0 0 25px ;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  margin: 20px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/* Button Checkout END*/ 
