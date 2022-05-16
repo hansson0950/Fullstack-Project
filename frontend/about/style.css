@@ -3,9 +3,13 @@ div.ABA{
     height: 585px;
 }
 .aboutparagraph{
-    color: rgb(255, 121, 121);
-    
+    color: white;   
 }
+
+.aboutHeader {
+    color: rgb(255, 121, 121);
+}
+
 .ABA{
     margin: auto;
     padding: 10px;
@@ -22,6 +26,7 @@ div.ABA{
 .ABAtitle{
     text-align: center;
     font-size:45px;
+    padding-top: 15px;
 }
 
 
@@ -33,6 +38,10 @@ div.ABA{
     font-size:17px;
     color:whitesmoke;
     text-shadow: 1px 1px 3px #1b3138;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 }
 

@@ -211,6 +211,10 @@ body {
     font-size:17px;
     color:whitesmoke;
     text-shadow: 1px 1px 3px #1b3138;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 }
 

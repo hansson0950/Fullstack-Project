@@ -3,11 +3,6 @@
   text-align: center;
 }
 
-#bread {
-  font-size: 20px;
-  color: white;
-}
-
 .submit {
   font-size: 50px;
   color: #fff;
@@ -25,6 +20,16 @@
 
 #Paragraph {
   font-size: 30px;
+}
+
+td {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#table {
+  margin: auto;
+  width: 50%;
 }
 
 #header {
@@ -85,6 +90,7 @@
   font-size: 15px;
   text-align: center;
   border-radius: 10px;
+  width: 100px;
 }
 
 .img {

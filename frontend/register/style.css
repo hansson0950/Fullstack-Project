@@ -60,13 +60,6 @@ body {
     padding-top: 40px;
 }
 
-.imgcon {
-    width:100%; 
-    margin:50px; 
-    display:table;
-    margin: auto;
-    border-spacing: 5em .5em;
-}
 .form2 {
     background-color: wheat;
     border-radius: 20px;
@@ -76,18 +69,7 @@ body {
     width: 360px;
     margin-left:40%;
 }
-.bild1 {
-    float:left;
-    height: 500px;
-    width: 25%;
-    
-}
-.bild2 {
-    float:right;
-    height: 100px;
-    width: 25%;
 
-}
 .createAccount {
     color: white;
     font-family: 'Carter One', cursive;
@@ -217,7 +199,10 @@ body {
     font-size:17px;
     color:whitesmoke;
     text-shadow: 1px 1px 3px #1b3138;
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footerDiv {
