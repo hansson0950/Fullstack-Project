@@ -1,128 +1,250 @@
-
-/* font-family: 'Carter One', cursive;
-  font-family: 'Luckiest Guy', cursive; */
-
-  .contactPage-header {
-    text-align: center;
-    font-family: 'Carter One', cursive;
-    font-size: 35px;
-    margin-bottom: 50px;
-    padding-top: 10px;
+.contactPage-header {
+  text-align: center;
+  font-family: 'Carter One', cursive;
+  font-size: 35px;
+  margin-bottom: 50px;
+  padding-top: 10px;
 }
 
 .contactPage-text {
-    padding-bottom: 15px;
-    text-align: center;
-    font-family: 'Carter One', cursive;
-    font-size: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Carter One', cursive;
+  font-size: 25px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(32, 40, 116);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 30px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  font-family: 'Carter One', cursive;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #06b;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  font-family: 'Carter One', cursive;
+  margin: auto;
+  margin-top: 50px;
+  width: 55%;
+  border-radius: 65px;
+  background-color: wheat;
+  padding: 50px;
+  height:730px;
+}
+
+.contact-section{
+  font-family: 'Carter One', cursive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 70px;
+  font-size: 18px;
+}
+
+.contact-info i{
+  margin-right: 20px;
+  font-size: 25px;
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    font-family: 'Carter One', cursive;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-
-  input[type=email], select, textarea {
-    font-family: 'Carter One', cursive;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    font-family: 'Carter One', cursive;
-    background-color: rgb(32, 40, 116);
-    color: white;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #57b3fd;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    font-family: 'Carter One', cursive;
-    margin: auto;
-    margin-top: 50px;
-    width: 55%;
-    border-radius: 65px;
-    background-color: wheat;
-    padding: 50px;
-  }
-
-  .contact-section{
-    font-family: 'Carter One', cursive;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact-info{
-    font-family: 'Carter One', cursive;
-    color: #fff;
-    max-width: 500px;
-    line-height: 65px;
-    padding-left: 70px;
-    font-size: 18px;
-  }
-  
-  .contact-info i{
-    margin-right: 20px;
-    font-size: 25px;
-  }
-
-
-  /*css for alert messages*/
+/*css for alert messages*/
 
 .alert-success{
-    font-family: 'Carter One', cursive;  
-    z-index: 1;
-    background: #D4EDDA;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #3AD66E;
-    border-radius: 4px;
-  }
-  
-  .alert-error{
-    font-family: 'Carter One', cursive;
-    z-index: 1;
-    background: #FFF3CD;
-    font-size: 18px;
-    padding: 20px 40px;
-    min-width: 420px;
-    position: fixed;
-    right: 0;
-    top: 10px;
-    border-left: 8px solid #FFA502;
-    border-radius: 4px;
-  }
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
 
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+.placeholder {
+color: #65657b;
+font-family: 'Carter One', cursive;
+left: 20px;
+line-height: 14px;
+pointer-events: none;
+position: absolute;
+transform-origin: 0 50%;
+transition: transform 200ms, color 200ms;
+top: 20px;
+}
+.cutShort {
+width: 50px;
+}
+
+.createAccount {
+color: white;
+font-family: 'Carter One', cursive;
+font-size: 14px;
+font-weight: 600;
+margin-top: 10px;
+}
+.createAccount a:hover{
+color:#FFA630;
+}
+
+#hidden {
+visibility: hidden;
+}
+
+.title {
+color: black;
+font-family: 'Carter One', cursive;
+font-size: 36px;
+font-weight: 600;
+margin-top: 30px;
+}
+
+.subtitle {
+color: black;
+font-family: 'Carter One', cursive;
+font-size: 16px;
+font-weight: 600;
+margin-top: 10px;
+}
+
+.inputContainer {
+height: 50px;
+position: relative;
+width: 100%;
+margin-top: 30px;
+}
+
+.input {
+background-color: #303245;
+border-radius: 12px;
+border: 0;
+box-sizing: border-box;
+color: #eee;
+font-size: 18px;
+font-family: 'Carter One', cursive;
+height: 100%;
+outline: 0;
+padding: 4px 20px 0;
+width: 100%;
+}
+
+.cut {
+background-color: #15172b;
+border-radius: 10px;
+height: 20px;
+left: 20px;
+position: absolute;
+top: -12px;
+transition: transform 200ms;
+width: 76px;
+}
+
+.cutShort {
+width: 75px;
+}
+.cutEmail {
+width: 53px;
+}
+.cutCountry {
+width: 65px;
+}
+.cutSubject {
+width: 65px;
+}
+
+
+.input:not(:placeholder-shown)~.placeholder {
+transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+color: #808097;
+}
+
+.input:focus~.placeholder {
+color: #dc2f55;
+}
+
+textarea {
+background-color: #303245;
+border-radius: 12px;
+border: 0;
+box-sizing: border-box;
+color: #eee;
+font-size: 18px;
+height: 200px;
+outline: 0;
+padding: 4px 20px 0;
+width: 100%;
+}
+
+textarea{
+padding-top:15px;
+}
+
+#subjectlabel{
+transform: translateY(-29px) translateX(10px) scale(0.75);
+}
+.textarea:not(:placeholder-shown)~.placeholder {
+color: #808097;
+}
+.textarea:focus~.placeholder {
+color: #dc2f55;
+}
+#submitlabel{
+transform: translateY(140px);
+}
+textarea:focus+label{
+color: white;
+}
   /* Footer start */
 .footer{
   padding: 5px;

@@ -195,7 +195,7 @@ body {
     width: 100%;
 }
 
-.submit:active {
+.submit:hover {
     background-color: #06b;
 }
 
