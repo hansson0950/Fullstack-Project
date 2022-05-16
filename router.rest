@@ -1,8 +1,8 @@
-POST https://localhost:3000/api/products
+POST http://localhost:3000/api/products
 Content-Type: "application/json"
 
 {
     "name": "Milk",
     "price": 5,
-    "imgLink": ""
+    "imgLink": "https://i.imgur.com/wdLsCnt.jpg"
 }

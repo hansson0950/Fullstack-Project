@@ -21,6 +21,7 @@ window.onload = function initialize() {
 
                 var name = document.createElement("p");
                 name.className = "prodName";
+                name.id = "prodName" + i;
                 name.innerHTML = response[i].name;
                 cell.appendChild(name);
 
@@ -30,6 +31,7 @@ window.onload = function initialize() {
                 cell.appendChild(img);
 
                 var price = document.createElement("p");
+                price.id = "prodPrice" + i;
                 price.innerHTML = response[i].price;
                 cell.appendChild(price);
 
@@ -82,3 +84,67 @@ table.addEventListener("change", e => {
     var counter = document.getElementById("counter" + productNr);
     counter.value = parseInt(counter.value) || 0;
 });
+
+function parseJwt(token) {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+};
+
+function checkout() {
+    var tokenJSON = parseJwt(localStorage.getItem("auth-token"))
+    const user = tokenJSON._id;    
+    
+    const rows = table.rows.length;
+    
+    var cells = 0;
+
+    for (let i = 0; i < rows; i++) {
+        const x = table.rows[i].cells.length;
+        cells += x;
+    }
+
+    var products = [];
+    let index = 0;
+    var totalPrice = 0;
+
+    for (let i = 0; i < cells; i++) {
+
+        var counter = document.getElementById("counter" + i);
+
+        if (counter.value == 0) continue;
+
+        var prodName = document.getElementById("prodName" + i).innerHTML;
+        var prodPrice = document.getElementById("prodPrice" + i).innerHTML;
+        var price = prodPrice * counter.value;
+
+        totalPrice += price;
+
+        for (let j = 0; j < counter.value; j++) {
+            products[index] = prodName;
+            index++;
+        }
+    }
+
+    const orderDetails = {
+        user: user,
+        products: products,
+        price: totalPrice
+    };
+
+    fetch("/api/orders", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderDetails)
+    })
+        .then(res => res.json())
+        .then(response => {
+            console.log(response);
+        });
+}

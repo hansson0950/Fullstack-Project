@@ -1,7 +1,6 @@
 const Product = require("../models/product");
 const express = require("express");
 const router = express.Router();
-module.exports = router;
 
 // Creating a new product
 router.post("/", async (req, res) => {
@@ -11,10 +10,10 @@ router.post("/", async (req, res) => {
         imgLink: req.body.imgLink
     });
     try {
-        const newProduct = await product.save()
-        res.status(201).json(newProduct)
+        const newProduct = await product.save();
+        res.status(201).json(newProduct);
     } catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(400).json({ message: error.message });
     }
 });
 
@@ -47,3 +46,5 @@ async function getProducts(req, res, next) {
     res.product = product;
     next();
 }
+
+module.exports = router;
