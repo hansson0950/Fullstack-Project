@@ -1,1 +1,26 @@
 /* font-family: 'Carter One', cursive; */ 
+div.ABA{
+    height: 585px;
+}
+p{
+    color: white;
+    
+}
+.ABA{
+    margin: auto;
+    padding: 10px;
+}
+.ABAtext{
+    margin-top: 15%;
+}
+.ABAtext p{
+    font-size:25px;
+}
+.ABAimg{
+    
+    margin-left:150%;
+}
+.ABAtitle p{
+    text-align: center;
+    font-size:45px;
+}
