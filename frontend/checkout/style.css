@@ -22,7 +22,7 @@
 
 .footerDiv {
   padding-top: 20px;
-  position:static;
+  position:justify;
   bottom: 10px;
   width: 100%;
 }

@@ -65,7 +65,12 @@
 
 
 /* PRODUCT STYLING */
-.prodName p {
+.prodName {
+  font-size: 30px;
+  color: white;
+}
+
+.prodPrice {
   font-size: 30px;
   color: white;
 }
