@@ -88,7 +88,7 @@ table.addEventListener("change", e => {
 function parseJwt(token) {
     var base64Url = token.split('.')[1];
     var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
     }).join(''));
 
@@ -97,38 +97,33 @@ function parseJwt(token) {
 
 function checkout() {
     var tokenJSON = parseJwt(localStorage.getItem("auth-token"))
-    const user = tokenJSON._id;    
-    
+    const user = tokenJSON._id;
     const rows = table.rows.length;
-    
     var cells = 0;
 
     for (let i = 0; i < rows; i++) {
         const x = table.rows[i].cells.length;
         cells += x;
-    }
+    };
 
     var products = [];
     let index = 0;
     var totalPrice = 0;
 
     for (let i = 0; i < cells; i++) {
-
         var counter = document.getElementById("counter" + i);
-
         if (counter.value == 0) continue;
 
         var prodName = document.getElementById("prodName" + i).innerHTML;
         var prodPrice = document.getElementById("prodPrice" + i).innerHTML.substring(2);
         var price = prodPrice * counter.value;
-
         totalPrice += price;
 
         for (let j = 0; j < counter.value; j++) {
             products[index] = prodName;
             index++;
-        }
-    }
+        };
+    };
 
     const orderDetails = {
         user: user,
@@ -148,4 +143,4 @@ function checkout() {
             sessionStorage.setItem("order-id", response._id);
             window.location.href = "/checkout";
         });
-}
+};
