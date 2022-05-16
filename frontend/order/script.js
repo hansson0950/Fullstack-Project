@@ -64,12 +64,12 @@ table.addEventListener("click", e => {
     if (element.type != "button") return;
 
     if (element.id.substring(0, 7) == "plusBtn") {
-        var productNr = element.id.charAt(7);
+        var productNr = element.id.substring(7);
         var counter = document.getElementById("counter" + productNr);
         var amount = parseInt(counter.value);
         counter.value = amount + 1;
     } else if (element.id.substring(0, 6) == "minBtn") {
-        var productNr = element.id.charAt(6);
+        var productNr = element.id.substring(6);
         var counter = document.getElementById("counter" + productNr);
         var amount = parseInt(counter.value);
         if (amount > 0) counter.value = amount - 1;
@@ -80,7 +80,7 @@ table.addEventListener("change", e => {
     var element = e.target;
     if (element.type != "text") return;
 
-    var productNr = element.id.charAt(7);
+    var productNr = element.id.substring(7);
     var counter = document.getElementById("counter" + productNr);
     counter.value = parseInt(counter.value) || 0;
 });
@@ -119,7 +119,7 @@ function checkout() {
         if (counter.value == 0) continue;
 
         var prodName = document.getElementById("prodName" + i).innerHTML;
-        var prodPrice = document.getElementById("prodPrice" + i).innerHTML;
+        var prodPrice = document.getElementById("prodPrice" + i).innerHTML.substring(2);
         var price = prodPrice * counter.value;
 
         totalPrice += price;
@@ -145,6 +145,6 @@ function checkout() {
     })
         .then(res => res.json())
         .then(response => {
-            localStorage.setItem("order-id", response._id)
+            sessionStorage.setItem("order-id", response._id);
         });
 }
