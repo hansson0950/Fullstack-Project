@@ -15,7 +15,7 @@ window.onload = function initialize() {
         .then(response => {
             JSON.stringify(response);
             for (let i = 0; i < response.length; i++) {
-                if (i % 3 == 0) var row = table.insertRow(-1);
+                if (i % 4 == 0) var row = table.insertRow(-1);
 
                 var cell = row.insertCell(0);
 
@@ -32,7 +32,7 @@ window.onload = function initialize() {
 
                 var price = document.createElement("p");
                 price.id = "prodPrice" + i;
-                price.innerHTML = response[i].price;
+                price.innerHTML = "$ " + response[i].price;
                 cell.appendChild(price);
 
                 var minBtn = document.createElement("input");
@@ -145,6 +145,6 @@ function checkout() {
     })
         .then(res => res.json())
         .then(response => {
-            console.log(response);
+            localStorage.setItem("order-id", response._id)
         });
 }
