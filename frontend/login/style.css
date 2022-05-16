@@ -65,14 +65,14 @@ body {
 }
 .bild1 {
     float:left;
-    height: 500px;
-    width: 25%;
+    max-width: 100%;
+    height: auto;
     
 }
 .bild2 {
     float:right;
-    height: 100px;
-    width: 25%;
+    max-width: 100%;
+    height: auto;
 
 }
 .createAccount {
@@ -111,6 +111,13 @@ body {
     position: relative;
     width: 100%;
     margin-top: 30px;
+}
+
+.inputContainer1 {
+    height: 5px;
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .input {
@@ -209,7 +216,7 @@ body {
 
 .footerDiv {
     padding-top: 20px;
-    position:fixed;
+    position:justify;
     bottom: 10px;
     width: 100%;
 }
