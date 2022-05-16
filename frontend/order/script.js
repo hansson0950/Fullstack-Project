@@ -146,5 +146,6 @@ function checkout() {
         .then(res => res.json())
         .then(response => {
             sessionStorage.setItem("order-id", response._id);
+            window.location.href = "/checkout";
         });
 }
