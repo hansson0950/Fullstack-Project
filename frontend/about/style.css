@@ -4,6 +4,7 @@ div.ABA{
 }
 .aboutparagraph{
     color: white;   
+    font-family: 'Carter One', cursive;
 }
 
 .aboutHeader {
@@ -26,6 +27,7 @@ div.ABA{
 .ABAtitle{
     text-align: center;
     font-size:45px;
+    
     padding-top: 15px;
 }
 

@@ -42,29 +42,49 @@
 
           <H1 class="contactPage-header">Contact Us!</H1>
           
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          <div class="inputContainer">
+            <input type="text" id="Firstname" class="input" placeholder="">
+            <div class="cut cutShort"></div>
+            <label for="Firstname" class="placeholder">Firstname</label>
+          </div>
+          
+          <div class="inputContainer">
+            <input type="text" id="Lastname" class="input" placeholder="">
+            <div class="cut cutShort"></div>
+            <label for="Lastname" class="placeholder">Lastname</label>
+          </div>
       
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-      
-          <label for="email">E-Mail</label>
-          <input type="email" id="email" name="email" placeholder="Your email.." required>
+          <div class="inputContainer">
+            <input type="email" id="Email" class="input" placeholder="">
+            <div class="cut cutEmail"></div>
+            <label for="Email" class="placeholder">Email</label>
+          </div>
 
-          <label for="country">Country</label>
-          <input type="text" id="country" name="country" placeholder="Your country.." required>
+          <div class="inputContainer">
+            <input type="text" id="Country" class="input" placeholder="">
+            <div class="cut cutCountry"></div>
+            <label for="Country" class="placeholder">Country</label>
+          </div>
 
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px" required></textarea>
-      
-          <input type="submit" value="Submit">
+          <div class="inputContainer"> 
+            <!--<input type="text" id="Country" class="input" placeholder="">-->
+            <div class="cut cutSubject"></div>
+            <label for="subject" class="placeholder" id="subjectlabel">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write here.." class="textarea" required></textarea>
+          </div>
+          
+
+        
+          <input type="submit" value="Submit" id="submitlabel">
         </form>
       </div>
 
+
+      
       <div class="footerDiv">
         <footer class="footer">
           <p id="footerParagraph">
-            Address: Elmetorpsvägen 15, kristianstad, Sweden <br>
+            Adress: Elmetorpsvägen 15, kristianstad, Sweden <br>
             E-mail: FreshFood@Gmail.com <br> 
             Contact-Tel: 072 358 09 68 <br>
             © 2022 Fresh Food
