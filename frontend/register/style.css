@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #104961, #1b3138, #104961);
+    font-family: 'Carter One', cursive;
 }
 
 .navbar {
@@ -51,7 +52,6 @@ body {
     height: 500px;
     padding: 20px;
     width: 360px;
-    float:left;
 }
 
 .formplace{
@@ -60,13 +60,6 @@ body {
     padding-top: 40px;
 }
 
-.imgcon {
-    width:100%; 
-    margin:50px; 
-    display:table;
-    margin: auto;
-    border-spacing: 5em .5em;
-}
 .form2 {
     background-color: wheat;
     border-radius: 20px;
@@ -76,21 +69,10 @@ body {
     width: 360px;
     margin-left:40%;
 }
-.bild1 {
-    float:left;
-    height: 500px;
-    width: 25%;
-    
-}
-.bild2 {
-    float:right;
-    height: 100px;
-    width: 25%;
 
-}
 .createAccount {
     color: white;
-    font-family: sans-serif;
+    font-family: 'Carter One', cursive;
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px;
@@ -105,7 +87,7 @@ body {
 
 .title {
     color: black;
-    font-family: sans-serif;
+    font-family: 'Carter One', cursive;
     font-size: 36px;
     font-weight: 600;
     margin-top: 30px;
@@ -113,7 +95,7 @@ body {
 
 .subtitle {
     color: black;
-    font-family: sans-serif;
+    font-family: 'Carter One', cursive;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
@@ -162,7 +144,7 @@ body {
 
 .placeholder {
     color: #65657b;
-    font-family: sans-serif;
+    font-family: 'Carter One', cursive;
     left: 20px;
     line-height: 14px;
     pointer-events: none;
@@ -192,6 +174,7 @@ body {
     box-sizing: border-box;
     color: white;
     cursor: pointer;
+    font-family: 'Carter One', cursive;
     font-size: 18px;
     height: 50px;
     margin-top: 30px;
@@ -216,12 +199,15 @@ body {
     font-size:17px;
     color:whitesmoke;
     text-shadow: 1px 1px 3px #1b3138;
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footerDiv {
     padding-top: 20px;
-    position:fixed;
+    position:justify;
     bottom: 10px;
     width: 100%;
 }

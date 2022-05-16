@@ -3,11 +3,6 @@
   text-align: center;
 }
 
-#bread {
-  font-size: 20px;
-  color: white;
-}
-
 .submit {
   font-size: 50px;
   color: #fff;
@@ -25,6 +20,16 @@
 
 #Paragraph {
   font-size: 30px;
+}
+
+td {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#table {
+  margin: auto;
+  width: 50%;
 }
 
 #header {
@@ -65,7 +70,12 @@
 
 
 /* PRODUCT STYLING */
-.prodName p {
+.prodName {
+  font-size: 30px;
+  color: white;
+}
+
+.prodPrice {
   font-size: 30px;
   color: white;
 }
@@ -80,4 +90,29 @@
   font-size: 15px;
   text-align: center;
   border-radius: 10px;
+  width: 100px;
 }
+
+.img {
+    width: 300px;
+    height: 400px;
+}
+
+/* Footer start */
+.footer{
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 121, 121);
+  font-size:17px;
+  color:whitesmoke;
+  text-shadow: 1px 1px 3px #1b3138;
+  
+}
+
+.footerDiv {
+  padding-top: 20px;
+  position:justify;
+  bottom: 10px;
+  width: 100%;
+}
+/* Footer end */

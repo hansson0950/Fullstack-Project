@@ -1,0 +1,54 @@
+/* font-family: 'Carter One', cursive; */ 
+div.ABA{
+    height: 585px;
+}
+.aboutparagraph{
+    color: white;   
+}
+
+.aboutHeader {
+    color: rgb(255, 121, 121);
+}
+
+.ABA{
+    margin: auto;
+    padding: 10px;
+}
+.ABAtext{
+    margin-top: 15%;
+}
+.ABAtext{
+    font-size:25px;
+}
+.ABAimg{
+    margin-left:150%;
+}
+.ABAtitle{
+    text-align: center;
+    font-size:45px;
+    padding-top: 15px;
+}
+
+
+/* Footer start */
+.footer{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(255, 121, 121);
+    font-size:17px;
+    color:whitesmoke;
+    text-shadow: 1px 1px 3px #1b3138;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footerDiv {
+    padding-top: 20px;
+    position:justify;
+    bottom: 10px;
+    width: 100%;
+}
+/* Footer end */

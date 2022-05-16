@@ -1,0 +1,95 @@
+/* Checkout HEADER */
+.checkoutHeader {
+  text-shadow: 1px 1px 3px rgb(255, 73, 210);
+  font-size: 45px;
+  color: rgb(255, 121, 121);
+  text-align: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+  /* Footer start */
+.footer{
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 121, 121);
+  font-size:17px;
+  color:whitesmoke;
+  text-shadow: 1px 1px 3px #1b3138;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerDiv {
+  padding-top: 20px;
+  position:justify;
+  bottom: 10px;
+  width: 100%;
+}
+/* Footer end */
+
+/* BACK TO ORDER PAGE BUTTON */
+.button-placementBackToOrderPage {
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-ToOrderpage {
+  background: linear-gradient(90deg, rgb(255, 73, 210), rgb(255, 121, 121) );
+  position: static;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  margin: 20px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+
+/* RECEIPT PLACEMENT START*/
+.receipt-placement{
+  margin: auto;
+  width: 50%;
+  background-color: wheat;
+  border-radius: 20px;
+  padding: 10px;
+  
+}
+
+#table {
+  margin: auto;
+  width: 50%;
+}
+.name {
+  font-size: 30px;
+  color: rgb(255, 121, 121);
+  float: left;
+  
+}
+
+.amount {
+  float: right;
+  font-size: 30px;
+  color: rgb(255, 121, 121);
+}
+
+.price {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(255, 121, 121);
+}

@@ -1,7 +1,6 @@
 const User = require("../models/user");
 const express = require("express");
 const router = express.Router();
-module.exports = router;
 
 router.get("/:id", getUser, (req, res) => {
     res.json(res.user);
@@ -20,3 +19,5 @@ async function getUser(req, res, next) {
     res.user = user;
     next();
 }
+
+module.exports = router;
