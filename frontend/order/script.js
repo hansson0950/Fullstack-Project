@@ -31,6 +31,7 @@ window.onload = function initialize() {
                 cell.appendChild(img);
 
                 var price = document.createElement("p");
+                price.className = "prodPrice";
                 price.id = "prodPrice" + i;
                 price.innerHTML = "$ " + response[i].price;
                 cell.appendChild(price);
