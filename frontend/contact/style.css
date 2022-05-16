@@ -136,7 +136,7 @@ input[type=text], select, textarea {
 
 .footerDiv {
   padding-top: 20px;
-  position:fixed;
+  position:justify;
   bottom: 10px;
   width: 100%;
 }

@@ -1,31 +1,10 @@
-/* Button Checkout START*/ 
-.button-placementCheckOut {
-    text-align: right;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
-  
-  .btn-checkOut {
-    background: linear-gradient(90deg, rgb(255, 73, 210), rgb(255, 121, 121) );
-    position: static;
-  }
-  
-  .btn {
-    color: #fff;
-    border: none;
-    margin: 20px;
-    padding: 20px 30px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    cursor: pointer;
-    border-radius: 30px;
-  }
-  /* Button Checkout END*/ 
+.checkoutHeader {
+  text-shadow: 1px 1px 3px #1b3138;
+  font-size: 45px;
+  color: rgb(255, 121, 121);
+  text-align: center;
+  text-decoration: underline;
+}
 
   /* Footer start */
 .footer{
@@ -40,7 +19,7 @@
 
 .footerDiv {
   padding-top: 20px;
-  position:fixed;
+  position:justify;
   bottom: 10px;
   width: 100%;
 }
