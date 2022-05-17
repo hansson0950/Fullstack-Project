@@ -13,7 +13,7 @@ const orders = require("./routes/orders");
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-// require("dotenv").config();
+require("dotenv").config();
 
 mongoose.connect(process.env.DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, () => {
     signale.success("Connected to database");
