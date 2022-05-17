@@ -9,7 +9,7 @@ MongoDB is used as the database to store data on products, users, orders and mor
 The application is deployed to the cloud using Heroku.
 
 ### How To Install And Run
-
+To run the application as a user all you need to to use the link to the website: https://fullstack-project-2022.herokuapp.com/
 
 ### How To Use
 Once on the application, get started by creating an account or logging in to an existing one.
